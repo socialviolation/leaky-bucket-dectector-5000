@@ -63,7 +63,7 @@ void sendAlertNotification() {
 
   HTTPClient http;
   http.begin("https://api.pushbullet.com/v2/pushes", pem);
-  http.addHeader("Access-Token", "o.Gbr917pBlyiy207WfzP8vWFqODKVHeey");
+  http.addHeader("Access-Token", "xxx");
   http.addHeader("Content-Type", "application/json");
   
   String payload = "{\"body\":\"WATER LEAK ALERT: LEVEL " + String(value) + "\",\"title\":\"WATER LEAK ALERT\",\"type\":\"note\"}";
